@@ -1,7 +1,7 @@
 // Code your solution here
 function findMatching(drivers, userInput){
-    let matchingList = drivers.filter(function(userInput){
-        return drivers === userInput;
+    let matchingList = drivers.filter(function(indDrivers){
+        return indDrivers.toLowerCase() === userInput.toLowerCase();
     })
     return matchingList
 }
